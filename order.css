@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #F7E7CE;
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 1rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4rem;
+  width: 100%;
+  z-index: 1000;
+}
+
+header h1 {
+  float: left;
+  margin-left: 0.5rem;
+}
+
+nav ul {
+  float: right;
+  list-style: none;
+  margin-right: 1rem;
+}
+
+nav ul li {
+  display: inline;
+  margin-left: 1rem;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.order-container {
+  margin-top: 80px;
+  max-width: 450px;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  margin-left: auto;
+  margin-right: auto;
+  backdrop-filter: blur(5px);
+}
+
+.order-container h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.order-card{
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.order-container label {
+  display: block;
+  margin: 0.7rem 0 0.3rem;
+  color: #333;
+  font-weight: 600;
+}
+
+.order-container input[type="number"],
+.order-container input[type="email"],
+.order-container select,
+.order-container input[type="file"] {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.order-container button {
+  margin-top: 1.5rem;
+  width: 100%;
+  padding: 0.6rem;
+  background-color: #0066cc;
+  border: none;
+  color: white;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.order-container button:hover {
+  background-color: #004c99;
+}
+
+#orderMessage {
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: 600;
+}

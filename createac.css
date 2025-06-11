@@ -1,0 +1,103 @@
+/* style.css */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 120vh;
+  background: url('createacbg.jpg') no-repeat center center fixed;
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 1rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 55px;
+  width: 100%;
+  z-index: 1000;
+}
+
+header h1 {
+  float: left;
+  margin-left: 1rem;
+}
+
+
+.login-container {
+  background: rgba(255, 255, 255, 0.4); /* semi-transparent white */
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  width: 320px;
+  max-width: 90%;
+  backdrop-filter: blur(5px); /* optional: adds a frosted-glass effect */
+}
+
+.login-container:hover{
+  transform: scale(1.02); 
+}
+
+.login-container h2 {
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #333;
+}
+
+.login-container label {
+  display: block;
+  margin: 0.5rem 0 0.2rem;
+  color: #333;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  border-sizing: border-box;
+}
+
+.login-container button {
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+.login-container button:hover {
+  background-color: #004c99;
+}
+
+.login-links {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.login-links a {
+  text-decoration: none;
+  color: #0066cc;
+  margin: 0 0.5rem;
+}
+
+.login-links a:hover {
+  text-decoration: underline;
+}
+
+#loginMessage {
+  margin-top: 1rem;
+  color: red;
+  text-align: center;
+}
