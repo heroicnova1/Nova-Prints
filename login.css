@@ -10,34 +10,39 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column; /* Ensures proper alignment even with header */
 }
 
 header {
   background: #333;
   color: #fff;
-  padding: 1rem 0;
+  padding: 0.5rem 1rem;
   position: fixed;
   top: 0;
   left: 0;
-  height: 45px;
   width: 100%;
   z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 45px;
+  box-sizing: border-box;
 }
 
 header h1 {
-  float: left;
-  margin-left: 0.2rem;
+  margin: 0;
+  font-size: 1.2rem;
 }
 
 nav ul {
-  float: right;
   list-style: none;
-  margin-right: 0.2rem;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
 nav ul li {
-  display: inline;
-  margin-left: 0.2rem;
+  margin-left: 1rem;
 }
 
 nav ul li a {
@@ -46,17 +51,19 @@ nav ul li a {
 }
 
 .login-container {
-  background: rgba(255, 255, 255, 0.5); /* semi-transparent white */
+  background: rgba(255, 255, 255, 0.5);
   padding: 2rem;
   border-radius: 10px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
   width: 320px;
   max-width: 90%;
-  backdrop-filter: blur(5px); /* optional: adds a frosted-glass effect */
+  backdrop-filter: blur(5px);
+  margin-top: 60px; /* Space below header */
+  transition: transform 0.2s ease-in-out;
 }
 
-.login-container:hover{
-  transform: scale(1.02); 
+.login-container:hover {
+  transform: scale(1.02);
 }
 
 .login-container h2 {
@@ -77,7 +84,7 @@ nav ul li a {
   margin-bottom: 1rem;
   border: 1px solid #ccc;
   border-radius: 5px;
-  border-sizing: border-box;
+  box-sizing: border-box; /* Corrected from 'border-sizing' */
 }
 
 .login-container button {
