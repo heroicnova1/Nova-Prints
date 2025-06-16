@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  height: 100vh;
+  height: 100 vh;
   background: url('loginbg.jpg') no-repeat center center fixed;
   background-size: cover;
 
@@ -15,29 +15,29 @@ body {
 header {
   background: #333;
   color: #fff;
-  padding: 1rem 0;
+  padding: 1 rem 0;
   position: fixed;
   top: 0;
   left: 0;
-  height: 55px;
+  height: 45 px;
   width: 100%;
   z-index: 1000;
 }
 
 header h1 {
   float: left;
-  margin-left: 1rem;
+  margin-left: 0.2 rem;
 }
 
 nav ul {
   float: right;
   list-style: none;
-  margin-right: 1rem;
+  margin-right: 1 rem;
 }
 
 nav ul li {
   display: inline;
-  margin-left: 1rem;
+  margin-left: 0.2 rem;
 }
 
 nav ul li a {
