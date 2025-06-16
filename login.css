@@ -26,18 +26,18 @@ header {
 
 header h1 {
   float: left;
-  margin-left: 0.2rem;
+  margin-left: 1rem;
 }
 
 nav ul {
   float: right;
   list-style: none;
-  margin-right: 0.2rem;
+  margin-right: 1rem;
 }
 
 nav ul li {
   display: inline;
-  margin-left: 0.2rem;
+  margin-left: 1rem;
 }
 
 nav ul li a {
